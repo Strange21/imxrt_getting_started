@@ -1,0 +1,20 @@
+[package]
+authors = ["nuc2kor"]
+edition = "2018"
+readme = "README.md"
+name = "imxrt1060-blinky"
+version = "0.1.0"
+
+[dependencies]
+cortex-m = "0.7.1"
+imxrt-hal = { version = "0.5", features = ["imxrt1060"] }
+
+imxrt-ral = { version = "0.5", features = ["imxrt1062", "rt"] }
+imxrt-rt = { version = "0.1", features = ["device"] }
+imxrt1060evk-fcb = "0.1"
+panic-halt = "0.2"
+
+[build-dependencies]
+imxrt-rt = { version = "0.1", features = ["device"] }
+
+
